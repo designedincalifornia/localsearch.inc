@@ -1,0 +1,200 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear:left;
+}
+
+/*ヘッダーの設定達--------------------------*/
+header {
+    height: 65px;
+    width: 100%;
+    background-color: #36003C;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 10; 
+}
+
+.logo {
+    width: 200px;
+    margin-top: 10px;
+} 
+
+.header-right a{
+    font-size: 15px;
+}
+
+.header-left {
+    float:left;
+}
+
+.header-right {
+    float:right;
+    padding-top: 10px;
+}
+
+.gnav_menu{
+    display: flex;
+}
+
+.gnav_item{
+    margin-left: 30px;
+    list-style: none;
+}
+
+.gnav_item a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li.current{
+    border-bottom: 3px solid #92D050;
+}
+
+nav li:hover{
+    color: #E7DA66;
+    border-bottom: 3px solid #F0E475;
+}
+
+/*----------------------------------------*/
+
+/*コンテナ全体的に--------------------------*/
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:0 auto;
+}
+/*----------------------------------------*/
+
+/*KVの設定-----------------------------*/
+.top-wrapper {
+    padding-top: 180px;
+    padding-bottom: 300px;
+    background-image: url(picture/image3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1{
+    opacity: 0.9;
+    margin-top: 15%;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.top-wrapper h4{
+    opacity: 0.9;
+    font-size: 30px;
+}
+/*----------------------------------------*/
+
+/*中央のwrapperの設定-----------------------------*/
+.wrapper {
+    height: 100%;
+    padding-bottom: 60px;
+    background-color: #EDF6FC;
+}
+
+.btn:hover{
+    opacity:1;
+}
+
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+}
+
+.heading h2{
+    font-weight: normal;
+}
+
+.search {
+    float:left;
+    height: 50%;
+    width: 33%;
+}
+
+.search-head {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.search p{
+    text-align: center;
+    color: red;
+}
+
+.box {
+    width: 50%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 1%;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #b3aeb5;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10%;
+    border-radius: 7%;
+    font-size: 10pt;
+    text-align: center;
+    cursor: pointer;
+    padding: 2% 5%;
+    background: #000066;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    border: 2px solid #000066;
+  }
+  .btn:hover {
+    color         : #000066;  
+    background    : #ffffff;
+  }
+
+label {
+    position: relative;
+    top: 0;
+    font-size: var(--font-size-small);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+ 
+input .box:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+/*--------------------------------*/
+
+footer img{
+    width: 25%;
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    color: #b3aeb5;
+    font-size:12px;
+}
+
+footer {
+    padding-top: 30px;
+}

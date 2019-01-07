@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset = "utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Local Search</title>
+ <link rel = "stylesheet" href = "style.css">
+ <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <img class="logo" src="picture/LCLogo.png">
+      </div>
+      <nav class="header-right">
+        <ul class="gnav_menu">
+          <li class="gnav_item"><a href="http://j-zinsights.oops.jp/index.html">運営者情報</a></li>
+          <li class="gnav_item"><a href="https://twitter.com/joe_inc9?lang=ja">Twitter</a></li>
+          <li class="gnav_item"><a href="https://www.facebook.com/jyo.ihata">Facebook</a></li>
+        </ul> 
+      </nav>
+    </div>
+  </header>
+    <div class="top-wrapper">
+        <h1>地域づくりの一歩を踏み出す</h1>
+        <h4>Local Searchは地方創生の情報を検索するサイトです</h4>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Find Something about Local!</h2>
+        </div>
+        <div class="searches">
+        <div class="search">
+            <h2 class="search-head">役に立つ本を探す</h2>
+            <form action="booksearch.php" method="post">
+                <input class="box" type="text" name="word1" id="dynamic">
+                <label for="dynamic">何か入力しないと全部出しますよ？</label>
+                <input class="btn" type="submit" value="検索">
+            </form>
+        </div>
+        <div class="search">
+            <h2 class="search-head">事例を探してみる</h2>
+            <form action="projectsearch.php" method="post">
+              <input class="box" type="text" name="word2">
+              <input class="btn" type="submit" value="検索">
+            </form>
+        </div>
+        <div class="search">
+            <h2 class="search-head">地域おこししてる人を探す</h2>
+            <p>ちょっと準備中ですので使えません</p>
+            <form action="personsearch.php" method="post">
+              <input class="box" type="text" name="word3">
+              <input class="btn" type="submit" value="検索">
+            </form>
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+      </div>
+    </div>
+   <footer>
+      <div class="container">
+          <img src="picture/LCLogo.png">
+          <p>Be a partner with local, start life in local<br>
+            © 2019 Joe Ihata Inc.</p>
+      </div>
+   </footer>
+</body>
+</html>
